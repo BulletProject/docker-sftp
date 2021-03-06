@@ -10,7 +10,6 @@ rm -rf /tmp/*
 #############
 ls /scripts
 
-if [ -e /scripts/initialstart ]; then 
 	echo "Initial Start..." 
 	
 	#-----------#
@@ -27,9 +26,8 @@ if [ -e /scripts/initialstart ]; then
 
 	sh /scripts/pre-FTP.sh
 	
-	rm -rf /scripts/initialstart
 	echo "Initial Start...done" 
-fi
+
 
 ###############
 #Unset Secrets#
