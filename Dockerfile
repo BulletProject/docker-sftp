@@ -12,6 +12,7 @@ RUN sed -i.bak -e "s%http://[^ ]\+%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /
 RUN apt update
 RUN apt install zip rsync unzip expect perl curl openssh-server  -y
 
+RUN rm -rf /scripts/ & mkdir /scripts/
 COPY ./resources/*  /scripts/
 
 WORKDIR /scripts/
