@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER haniokasai <htek@haniokasai.com>
 
 RUN mkdir -p /data /scripts
-RUN touch /minecraft/initialstart
+RUN touch /scripts/initialstart
 
 
 RUN apk add --upgrade \
