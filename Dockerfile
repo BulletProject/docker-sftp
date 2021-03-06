@@ -8,13 +8,10 @@ RUN touch /minecraft/initialstart
 RUN apk add --upgrade \
     bash \
     openssh \
-    openssh-sftp-server \
+    openssh-sftp-server 
     
 COPY ./resources/*  /scripts/
 
 WORKDIR /scripts/
 
 ENTRYPOINT sh /scripts/run-Main.sh
-
-
-# 
