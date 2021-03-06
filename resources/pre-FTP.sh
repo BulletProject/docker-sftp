@@ -1,10 +1,9 @@
 #!/bin/bash
 echo "Prepare ftp...." 
-
 #config
 sh /scripts/config-FTP.sh
-mkdir -p /run/sshd
- 
+mkdir -p /run/sshd 
+
 groupadd ftpgroup
 ftp_login=${SRVID}
 ftp_pass=${PASSWD}

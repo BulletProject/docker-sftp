@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Config ftp...." >&1
+echo "Config ftp...." 
 
 #config
 SSHDFILE=/etc/ssh/sshd_config
