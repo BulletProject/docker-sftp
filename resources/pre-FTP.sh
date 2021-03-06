@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Prepare ftp...." >&1
+echo "Prepare ftp...." 
 
 #config
 sh /scripts/config-FTP.sh
@@ -15,4 +15,4 @@ usermod $ftp_login -G ftpgroup
 unset ftp_pass
 unset PASSWD
 
-echo "Prepare ftp....done" >&1
+echo "Prepare ftp....done" 
