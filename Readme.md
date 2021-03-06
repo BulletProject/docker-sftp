@@ -1,7 +1,7 @@
 # mirm/docker-sftp
 
 ```
-export CONTAINERNAME=test2 #アクセスしたいコンテナ名
+export CONTAINERNAME=test2 #繧｢繧ｯ繧ｻ繧ｹ縺励◆縺�繧ｳ繝ｳ繝�繝雁錐
 export DOCKCONT_MOUNTPOINT=`docker inspect --format='{{ .GraphDriver.Data.Mountpoint }}' ${CONTAINERNAME}`
 
 export MIRM_FTP_USERNAME = test
@@ -12,7 +12,7 @@ export MIRM_FTP_MOUNTDIR = ${DOCKCONT_MOUNTPOINT}/worlds
 
 docker create --name=${MIRM_FTP_CONTNAME} \
 	--storage-opt size=0.5g --memory 100M --cpus 0.3  \
-	-p  ${MIRM_FTP_PORT}:22 -p   \
+	-p  ${MIRM_FTP_PORT}:22 \
 	-e SRVID=${MIRM_FTP_USERNAME} -e PASSWD=${MIRM_FTP_PASSWD} \
 	-v /smx/docker_minecraft_res:/data/mount \
 	-itd mirm/docker-minecraft
