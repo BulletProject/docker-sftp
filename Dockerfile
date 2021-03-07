@@ -11,6 +11,7 @@ RUN touch /scripts/initialstart
 RUN sed -i.bak -e "s%http://[^ ]\+%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /etc/apt/sources.list
 RUN apt update
 RUN apt install zip rsync unzip expect perl curl openssh-server  -y
+RUN apt clean
 
 RUN rm -rf /scripts/ & mkdir /scripts/
 COPY ./resources/*  /scripts/
